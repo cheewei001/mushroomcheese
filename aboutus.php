@@ -2,7 +2,7 @@
 session_start();
 use classes\business\UserManager;
 use classes\business\Validation;
-
+// comments
 require_once 'includes/autoload.php';
 include 'includes/header.php';
 ?>
