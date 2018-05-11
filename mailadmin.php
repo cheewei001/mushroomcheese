@@ -55,7 +55,7 @@ if(isset($_POST["submitted"])){
         $mail->From = "acjobs@gmail.com";
         $mail->FromName = "admin";
         $mail->addAddress($row['email'], "admin");
-        $mail->isHTML(TRUE);
+        $mail->isHTML(FALSE);
         $mail->Subject = "News Letter";
         $mail->Body = "<p>$mailcontent</p><br><br><a href=$link >Unsubscribe</a>";
         $mail->AltBody = "This is the plain text version of the email content";
