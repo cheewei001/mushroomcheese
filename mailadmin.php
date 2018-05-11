@@ -53,6 +53,7 @@ if(isset($_POST["submitted"])){
         $mail->Port = 587;
         //$mail->Port = 25;
         $mail->From = "acjobs@gmail.com";
+        // test
         $mail->FromName = "admin";
         $mail->addAddress($row['email'], "admin");
         $mail->isHTML(TRUE);
